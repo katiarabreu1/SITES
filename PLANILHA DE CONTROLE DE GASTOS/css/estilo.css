@@ -17,6 +17,7 @@ th{
 }
 td{
     border-style: groove;
+    width:200px;
 }
 tfoot{
     font-style:italic;
@@ -29,4 +30,13 @@ tfoot{
     outline:none;
     padding:8px;
     box-sizing:border-box;
+}
+.recibo{
+    background-color:#fff;
+    max-width:600px;
+    margin:0 auto;
+    padding:30px;
+    border-style:groove;
+    border-radius:8px;
+    box-shadow:0 4px 8px rgaba(0,0,0,0,1);
 }
