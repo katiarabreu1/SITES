@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define o padrão de caracteres da página -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar melhor em celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Landing Page HTML</title>
+<script type="text/javascript" src="/ruxitagentjs_ICANVfgqrux_10339260603164134.js" data-dtconfig="rid=RID_1143130021|rpid=1700257209|domain=unicesumar.edu.br|reportUrl=/rb_bf10933whx|app=ea7c4b59f27d43eb|cuc=asx9dndv|owasp=1|mel=100000|featureHash=ICANVfgqrux|lastModification=1781203323642|srsr=1000|tp=500,50,0|rdnt=0|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICANVfgqrux_10339260603164134.js"></script></head>
+
+<body>
+
+    <!-- Cabeçalho principal da página -->
+    <header>
+        <h1>Front - End</h1>
+        <p>Aprenda programação de forma simples e prática</p>
+
+        <!-- Menu de navegação -->
+        <nav>
+            <a href="#inicio">Início</a> |
+            <a href="#sobre">Sobre</a> |
+            <a href="#conteudo">Conteúdo</a> |
+            <a href="#precos">Planos</a> |
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Seção inicial da landing page -->
+    <main>
+
+        <section id="inicio">
+            <h2>Aula Prático de HTML</h2>
+
+            <p>
+                Nesta aula, vamos construir uma landing page utilizando apenas HTML.
+                O objetivo é entender a estrutura de uma página web antes de aplicar CSS.
+            </p>
+
+            <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQFmwxlnN_ErsnNlLfQMgHcwkmk6UsS6Co5jTcieZKbd98TSUE18tLdjkpZ1Cutr5_9KJeKAAawYVAchIozzh_hFEK3SLLAjn2Lcf89wK&s=10" 
+                alt="Imagem ilustrativa de programação"
+            >
+
+            <p>
+                <a href="#contato">Quero participar</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Seção sobre o curso -->
+        <section id="sobre">
+            <h2>Sobre o curso</h2>
+
+            <p>
+                Este curso foi criado para alunos que estão iniciando no desenvolvimento web.
+                Primeiro aprendemos HTML, depois aplicamos CSS para melhorar o visual.
+            </p>
+
+            <h3>O que você vai aprender?</h3>
+
+            <ul>
+                <li>Estrutura básica de uma página HTML</li>
+                <li>Uso correto de títulos e parágrafos</li>
+                <li>Criação de links e menus</li>
+                <li>Inserção de imagens</li>
+                <li>Criação de listas, tabelas e formulários</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Seção de conteúdo programático -->
+        <section id="conteudo">
+            <h2>Conteúdo da aula</h2>
+
+            <ol>
+                <li>Criação do arquivo index.html</li>
+                <li>Estrutura HTML básica</li>
+                <li>Cabeçalho da página</li>
+                <li>Menu de navegação</li>
+                <li>Seções da landing page</li>
+                <li>Formulário de contato</li>
+                <li>Rodapé da página</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Seção com tabela -->
+        <section id="precos">
+            <h2>Planos do curso</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Plano</th>
+                        <th>Conteúdo</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Básico</td>
+                        <td>HTML introdutório</td>
+                        <td>Gratuito</td>
+                    </tr>
+
+                    <tr>
+                        <td>Intermediário</td>
+                        <td>HTML + CSS</td>
+                        <td>R$ 49,90</td>
+                    </tr>
+
+                    <tr>
+                        <td>Completo</td>
+                        <td>HTML + CSS + Projeto Final</td>
+                        <td>R$ 99,90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Seção de formulário -->
+        <section id="contato">
+            <h2>Inscreva-se</h2>
+
+            <p>Preencha o formulário abaixo para receber mais informações.</p>
+
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                <br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                <br><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+                <br><br>
+
+                <label for="plano">Escolha um plano:</label><br>
+                <select id="plano" name="plano">
+                    <option value="">Selecione</option>
+                    <option value="basico">Básico</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="completo">Completo</option>
+                </select>
+                <br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea>
+                <br><br>
+
+                <button type="submit">Enviar inscrição</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>DevStart - Curso Prático de HTML</p>
+        <p>Todos os direitos reservados.</p>
+        <p>
+            <a href="#inicio">Voltar ao topo</a>
+        </p>
+    </footer>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"3024894cea6246839a78444d3da348f6","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
