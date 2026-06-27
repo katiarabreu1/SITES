@@ -1,0 +1,575 @@
+/* =====================================================
+   RESET CSS
+   ===================================================== */
+
+/*
+O seletor * representa TODOS os elementos da página.
+
+Aqui removemos margens e espaçamentos que os navegadores
+adicionam automaticamente.
+
+Também utilizamos box-sizing: border-box para facilitar
+o cálculo de largura e altura dos elementos.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+   ===================================================== */
+
+/*
+O body representa toda a área visível da página.
+
+Tudo que estiver dentro do body receberá essas configurações,
+a menos que sejam sobrescritas posteriormente.
+*/
+body {
+
+    /* Fonte utilizada na página */
+    font-family: Arial, sans-serif;
+
+    /* Cor de fundo da página */
+    background-color: #f4f7fb;
+
+    /* Cor padrão dos textos */
+    color: #1f2937;
+
+    /* Espaçamento entre linhas */
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+   ===================================================== */
+
+/*
+Classe utilizada no HEADER.
+
+Responsável pela área superior da página.
+*/
+.cabecalho {
+
+    /* Cor de fundo */
+    background-color: #0f172a;
+
+    /* Cor dos textos */
+    color: white;
+
+    /* Espaçamento interno */
+    padding: 30px 8%;
+
+    /* Centraliza os textos */
+    text-align: center;
+}
+
+
+/*
+Título principal do cabeçalho
+*/
+.cabecalho h1 {
+
+    /* Tamanho da fonte */
+    font-size: 36px;
+
+    /* Espaço abaixo do título */
+    margin-bottom: 10px;
+}
+
+
+/*
+Subtítulo do cabeçalho
+*/
+.cabecalho p {
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   MENU
+   ===================================================== */
+
+/*
+Links do menu de navegação.
+*/
+.menu a {
+
+    /* Cor do link */
+    color: white;
+
+    /* Remove o sublinhado */
+    text-decoration: none;
+
+    /* Espaçamento entre os links */
+    margin: 0 10px;
+
+    /* Texto em negrito */
+    font-weight: bold;
+}
+
+
+/*
+Pseudo-classe hover.
+
+É aplicada quando o mouse passa sobre o elemento.
+*/
+.menu a:hover {
+
+    color: #38bdf8;
+}
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+/*
+Hero é a primeira seção visual da página.
+
+Contém:
+- Foto
+- Texto principal
+- Botão
+*/
+.hero {
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /* Alinha os itens verticalmente */
+    align-items: center;
+
+    /* Espaço entre foto e texto */
+    gap: 40px;
+
+    /* Espaçamento interno */
+    padding: 70px 8%;
+
+    /* Cor de fundo */
+    background-color: #e0f2fe;
+}
+
+
+/* =====================================================
+   FOTO DE PERFIL
+   ===================================================== */
+
+/*
+Imagem principal do currículo.
+*/
+.foto-perfil {
+
+    /* Largura */
+    width: 250px;
+
+    /* Altura */
+    height: 250px;
+
+    /* Torna a imagem circular */
+    border-radius: 50%;
+
+    /* Ajusta o corte da imagem */
+    object-fit: cover;
+
+    /* Borda branca */
+    border: 6px solid white;
+}
+
+
+/* =====================================================
+   TÍTULO PRINCIPAL DA HERO
+   ===================================================== */
+
+.hero h2 {
+
+    font-size: 36px;
+
+    color: #0f172a;
+
+    margin-bottom: 20px;
+}
+
+
+/*
+Parágrafos da seção inicial.
+*/
+.hero p {
+
+    margin-bottom: 15px;
+
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   BOTÃO
+   ===================================================== */
+
+/*
+Botão principal da página.
+*/
+.botao {
+
+    /* Permite comportamentos de bloco */
+    display: inline-block;
+
+    /* Cor de fundo */
+    background-color: #0284c7;
+
+    /* Cor do texto */
+    color: white;
+
+    /* Espaçamento interno */
+    padding: 14px 28px;
+
+    /* Bordas arredondadas */
+    border-radius: 8px;
+
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Negrito */
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+
+/*
+Efeito ao passar o mouse.
+*/
+.botao:hover {
+
+    background-color: #0369a1;
+}
+
+
+/* =====================================================
+   SEÇÕES DA PÁGINA
+   ===================================================== */
+
+/*
+Classe reutilizada em várias seções.
+*/
+.secao {
+
+    padding: 60px 8%;
+
+    background-color: white;
+}
+
+
+/*
+Títulos das seções.
+*/
+.secao h2 {
+
+    text-align: center;
+
+    color: #0f172a;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+
+/*
+Parágrafos das seções.
+*/
+.secao p {
+
+    max-width: 900px;
+
+    margin: 0 auto 15px auto;
+}
+
+
+/* =====================================================
+   FUNDO ALTERNATIVO
+   ===================================================== */
+
+/*
+Utilizado para diferenciar visualmente algumas seções.
+*/
+.destaque {
+
+    background-color: #f8fafc;
+}
+
+
+/* =====================================================
+   GRID DE COMPETÊNCIAS
+   ===================================================== */
+
+/*
+Lista transformada em GRID.
+
+Grid permite organizar os elementos em linhas e colunas.
+*/
+.lista-cards {
+
+    display: grid;
+
+    /* 4 colunas iguais */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    list-style: none;
+}
+
+
+/*
+Cada item da lista.
+*/
+.lista-cards li {
+
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+/* =====================================================
+   CARDS DE EXPERIÊNCIA
+   ===================================================== */
+
+/*
+Cada experiência profissional.
+*/
+.card {
+
+    background-color: #f8fafc;
+
+    padding: 25px;
+
+    /* Barra lateral colorida */
+    border-left: 5px solid #0284c7;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+/*
+Título do card.
+*/
+.card h3 {
+
+    color: #0284c7;
+
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   TABELA
+   ===================================================== */
+
+/*
+Tabela completa.
+*/
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+
+/*
+Cabeçalho da tabela.
+*/
+th {
+
+    background-color: #0284c7;
+
+    color: white;
+
+    padding: 15px;
+}
+
+
+/*
+Células da tabela.
+*/
+td {
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+}
+
+
+/* =====================================================
+   CONTATO
+   ===================================================== */
+
+/*
+Seção de contato.
+*/
+.contato {
+
+    background-color: #e0f2fe;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   FORMULÁRIO
+   ===================================================== */
+
+/*
+Formulário completo.
+*/
+form {
+
+    max-width: 500px;
+
+    margin: 30px auto 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/*
+Campos de entrada.
+*/
+input,
+textarea {
+
+    padding: 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+/*
+Botão enviar.
+*/
+button {
+
+    background-color: #0284c7;
+
+    color: white;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/*
+Hover do botão.
+*/
+button:hover {
+
+    background-color: #0369a1;
+}
+
+
+/* =====================================================
+   RODAPÉ
+   ===================================================== */
+
+/*
+Área final da página.
+*/
+.rodape {
+
+    background-color: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+   ===================================================== */
+
+/*
+As regras abaixo serão executadas apenas
+quando a largura da tela for menor ou igual a 768px.
+
+Normalmente:
+- Tablets
+- Celulares
+*/
+@media (max-width: 768px) {
+
+    /*
+    A seção Hero passa de horizontal para vertical.
+    */
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    /*
+    As competências passam de 4 colunas para 1 coluna.
+    */
+    .lista-cards {
+
+        grid-template-columns: 1fr;
+    }
+
+    /*
+    Reduz tamanho do título principal.
+    */
+    .cabecalho h1 {
+
+        font-size: 28px;
+    }
+
+    /*
+    Reduz tamanho do título da Hero.
+    */
+    .hero h2 {
+
+        font-size: 28px;
+    }
+}
+
+
+
+
+
