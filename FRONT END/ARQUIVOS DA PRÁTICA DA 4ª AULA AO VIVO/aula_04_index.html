@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Rodolfo Terra | Aula JavaScript</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <h1>Professor Rodolfo Terra</h1>
+
+        <p>
+            Engenheiro de Dados AWS |
+            Professor de Tecnologia
+        </p>
+
+    </header>
+
+    <section class="hero">
+
+        <img
+            id="fotoPerfil"
+            class="foto-perfil"
+            src="https://media.licdn.com/dms/image/v2/D4D03AQHpJhbegBvpag/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719038446539?e=1782950400&v=beta&t=QNMSJNXMAdLm2Jm89BXUpQDpHkZbNl6nja9h_4GHAus"
+            alt="Rodolfo Terra">
+
+        <div>
+
+            <h2 id="titulo-principal">
+                Bem-vindo ao meu currículo online
+            </h2>
+
+            <p>
+                Especialista em Engenharia de Dados,
+                AWS, Python, SQL e Big Data.
+            </p>
+
+            <button id="btnMensagem">
+                Mostrar Mensagem
+            </button>
+
+            <button id="btnCor">
+                Alterar Cor
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="secao">
+
+        <h2>Data Atual</h2>
+
+        <p id="dataAtual"></p>
+
+    </section>
+
+    <section class="secao">
+
+        <h2>Contador</h2>
+
+        <h3 id="contador">
+            0
+        </h3>
+
+        <button id="btnContador">
+            Aumentar
+        </button>
+
+    </section>
+
+    <section class="secao">
+
+        <h2>Competências</h2>
+
+        <button id="btnCompetencias">
+            Mostrar Competências
+        </button>
+
+        <p id="textoCompetencias"></p>
+
+    </section>
+
+    <section class="secao">
+
+        <h2>Certificações</h2>
+
+        <button id="btnCertificacoes">
+            Mostrar Certificações
+        </button>
+
+        <p id="textoCertificacoes"></p>
+
+    </section>
+
+    <section class="secao">
+
+        <h2>Contato</h2>
+
+        <form id="formContato">
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Digite seu e-mail">
+
+            <input
+                type="text"
+                id="assunto"
+                placeholder="Digite o assunto">
+
+            <textarea
+                id="mensagem"
+                rows="5"
+                placeholder="Digite sua mensagem">
+            </textarea>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer class="rodape">
+
+        <p id="textoRodape">
+            Professor Rodolfo Terra
+        </p>
+
+        <p>
+            © <span id="anoAtual"></span>
+        </p>
+
+    </footer>
+
+    <script src="aula_04_script.js"></script>
+
+</body>
+
+</html>
